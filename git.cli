@@ -1,5 +1,5 @@
 <Fork and clone the repository>
-git clone git@github.com:10ky/dev-env.git
+git clone git@github.com:stliang/dev-env.git
 cd dev-env
 
 <Add upstream and set no_push>
