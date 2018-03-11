@@ -1,0 +1,30 @@
+<Fork and clone the repository>
+git clone git@github.com:10ky/dev-env.git
+cd dev-env
+
+<Add upstream and set no_push>
+git remote add upstream git@github.com:10ky/dev-env.git
+git remote -vv
+git remote set-url --push upstream no_push
+git remote -vv
+
+<Create new branch for work>
+git checkout master
+
+<Pull latest changes before pushing>
+git fetch --all
+git pull upstream master
+
+<Create a new branch for every new feature>
+git checkout -b "meaingful_name"
+<code changes>
+git add README.md
+git commit -m "Testing Git access"
+git push origin meaingful_name
+
+<To merge pull requests>
+git rebase -i upstream/master
+git push -f origin meaingful_name
+
+<Switch branch>
+git checkout meaingful_name
