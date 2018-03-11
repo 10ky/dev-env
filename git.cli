@@ -1,5 +1,5 @@
 <Fork and clone the repository>
-git clone git@github.com:stliang/dev-env.git
+git clone git@github.com:steve/dev-env.git
 cd dev-env
 
 <Add upstream and set no_push>
@@ -16,15 +16,15 @@ git fetch --all
 git pull upstream master
 
 <Create a new branch for every new feature>
-git checkout -b "meaingful_name"
+git checkout -b "dev-env"
 <code changes>
 git add README.md
 git commit -m "Testing Git access"
-git push origin meaingful_name
+git push origin dev-env
 
 <To merge pull requests>
 git rebase -i upstream/master
-git push -f origin meaingful_name
+git push -f origin dev-env
 
 <Switch branch>
-git checkout meaingful_name
+git checkout dev-env
