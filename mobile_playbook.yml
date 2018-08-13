@@ -1,0 +1,31 @@
+---
+- hosts: all
+  tasks:  
+    - name: Install libraries with homebrew
+      homebrew: name={{ item }} state=present
+      with_items:
+        - node
+        - wget
+        - vim
+        - ack
+        - git
+        - watchman
+        - yarn
+        - flow
+    - name: Install node.js package globally.
+      npm: name={{ item }} global=yes
+      with_items:
+        - node-gyp
+        - exp
+        - awsmobile-cli
+        - aws-amplify
+        - aws-amplify-react-native
+        - create-react-native-app
+        - react-native-canvas
+        - react-native-cli
+        - react-native-app-intro
+        - react-native-credit-card
+        - react-native-bouncing-preloader
+        - react-native-google-signin
+        - react-devtools
+

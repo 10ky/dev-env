@@ -1,0 +1,47 @@
+create-react-native-app meaning
+cd meaning
+awsmobile init #
+react-native link amazon-cognito-identity-js
+vi index.js
+
+import Amplify from 'aws-amplify'
+import config from './aws-exports'
+Amplify.configure(config)
+
+awsmobile user-signin enable
+
+awsmobile cloud-api enable --prompt
+
+/artists
+/moments
+/patrons
+/works
+
+
+awsmobile push
+
+awsmobile cloud-api invoke meaning GET /works
+
+yarn add aws-amplify
+yarn add aws-amplify-react-native
+yarn add amazon-cognito-identity-js
+yarn add aws-sdk
+yarn add babel-preset-es2015
+yarn add buffer
+yarn add mime-type
+yarn add path
+yarn add prop-types
+yarn add react
+yarn add react-devtools
+yarn add react-native
+yarn add react-native-elements
+yarn add react-native-fetch-blob
+yarn add react-native-prompt
+yarn add react-native-uuid
+yarn add react-native-vector-icons
+yarn add react-navigation
+
+awsmobile delete
+
+# may be npm install will automatically link amazon stuff
+npm install
